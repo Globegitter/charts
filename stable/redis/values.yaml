@@ -111,6 +111,9 @@ master:
   #     memory: 256Mi
   #     cpu: 100m
 
+  # Redis Master initContainers
+  # initContainers: []
+
   ## Redis Master Liveness Probe
   livenessProbe:
     enabled: true
@@ -209,6 +212,9 @@ slave:
   # extraFlags: []
   ## Comma-separated list of Redis commands to disable
   # disableCommands: ""
+
+  # Redis Slave initContainers
+  # initContainers: []
 
   ## Redis slave Liveness Probe
   # livenessProbe:
